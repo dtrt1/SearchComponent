@@ -1,0 +1,81 @@
+.search-container {
+  width: 100%;
+}
+
+.search-container * {
+  box-sizing: border-box;
+}
+
+.search-container .container {
+  font-size: 0;
+  margin: 20px 0;
+  position: relative;
+}
+
+.search-container .input-container {
+  width: 80%;
+  display: inline-block;
+  font-size: 16px;
+  position: relative;
+  outline: none;
+  line-height: 18px;
+}
+
+.search-container .button {
+  width: 20%;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.search-container input, .search-container button {
+  width: 100%;
+  padding: 10px 0;
+  border: 1px solid gray;
+}
+
+.full-width {
+  width: 100vw;
+}
+
+.half-width {
+  width: 50vw;
+}
+
+.quarter-width {
+  width: 25vw;
+}
+
+.delete-container {
+  position: absolute;
+  color: #b3b3b3;
+  cursor: pointer;
+  right: 11px;
+  top: 11px;
+  display: none;
+}
+
+.delete-container:hover {
+  color: #7f7f7f;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+.suggestions-container {
+    width: 80%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    top: 40px;
+    position: absolute;
+    font-size: 16px;
+    z-index: 1;
+    background: white;
+}
+
+.suggestions-container * {
+  margin: 10px 0;
+  cursor: pointer;
+}

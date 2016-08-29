@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Test Task</title>
+
+    <link href="main.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <div id="app">
+      <div class="full-width">
+        <div class="search-container"></div>
+      </div>
+
+      <div class="half-width">
+        <div class="search-container"></div>
+      </div>
+
+      <div class="quarter-width">
+        <div class="search-container"></div>
+      </div>
+    </div>
+
+    <script id="search-template" type="my-template">
+      <div class="container">
+        <div class="input-container">
+          <input class="search-string" />
+          <div class="delete-container">
+            &#10006;
+          </div>
+        </div>
+        <div class="button">
+          <button class="search-button">Search</button>
+        </div>
+      </div>
+    </script>
+    <script id="suggestions-template" type="my-template">
+      <div class="suggestions-container">
+        <div class="phrase-container">
+        </div>
+        <div class="domain-container">
+        </div>
+        <div class="url-container">
+        </div>
+      </div>
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    
+    <!-- https://github.com/Polymer/URL -->
+    <script src="url.js"></script>
+    <script src="searchcomponent.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
